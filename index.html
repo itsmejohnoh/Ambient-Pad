@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ambient Pads</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="volume-control">
+    <label for="volumeSlider">Volume:</label>
+    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+  </div>
+  <div class="container">
+    <div class="square" data-note="note1"><span>C Major</span></div>
+    <div class="square" data-note="note2"><span>D Major</span></div>
+    <div class="square" data-note="note3"><span>E Major</span></div>
+    <div class="square" data-note="note4"><span>F Major</span></div>
+    <div class="square" data-note="note5"><span>G Major</span></div>
+    <div class="square" data-note="note6"><span>A Major</span></div>
+    <div class="square" data-note="note7"><span>B Major</span></div>
+    <div class="square" data-note="note8"><span>A# Major</span></div>
+    <div class="square" data-note="note9"><span>Note 9</span></div>
+    <div class="square" data-note="note10"><span>Note 10</span></div>
+    <div class="square" data-note="note11"><span>Note 11</span></div>
+    <div class="square" data-note="note12"><span>Note 12</span></div>
+  </div>
+  <button id="stopButton">Stop</button>
+  <textarea id="notes" placeholder="Take your notes here..."></textarea>
+  <audio id="audio" src=""></audio>
+  <script src="index.js"></script>
+</body>
+</html>
