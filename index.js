@@ -12,12 +12,12 @@ const notes = {
   note4: 'sounds/Fmajor.mp3',
   note5: 'sounds/Gmajor.mp3',
   note6: 'sounds/Amajor.mp3',
-  note7: 'sounds/Bmajor.mp3',
-  note8: 'sounds/A#major.mp3',
+  note7: 'sounds/A#major.mp3',
+  note8: 'sounds/Bmajor.mp3',
   note9: 'sounds/note9.mp3',
-  note10: 'sounds/note10.mp3',
-  note11: 'sounds/note11.mp3',
-  note12: 'sounds/note12.mp3'
+  // note10: 'sounds/note10.mp3',
+  // note11: 'sounds/note11.mp3',
+  // note12: 'sounds/note12.mp3'
 };
 
 squares.forEach(square => {
@@ -58,7 +58,7 @@ function fadeOut(audio, callback) {
   let volume = audio.volume;
   const fadeOutInterval = setInterval(() => {
     if (volume > 0.1) {
-      volume -= 0.1;
+      volume -= 0.01;
       audio.volume = volume;
     } else {
       clearInterval(fadeOutInterval);
@@ -82,3 +82,4 @@ function fadeIn(audio) {
     }
   }, 50);
 }
+

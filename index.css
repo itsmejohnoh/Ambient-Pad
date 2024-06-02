@@ -15,7 +15,7 @@ body {
   
   .container {
     display: grid;
-    grid-template-columns: repeat(4, 100px);
+    grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
     gap: 10px;
     margin-bottom: 20px;
@@ -32,6 +32,7 @@ body {
     transition: background-color 0.3s;
     position: relative;
     border: 2px solid black;
+    border-radius: 5px;
   }
   
   .square:hover {
